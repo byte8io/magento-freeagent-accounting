@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Byte8 Ltd. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Byte8\FreeAgentAccounting\Api\FreeAgentConfigInterface"
+                type="Byte8\FreeAgentAccounting\Model\FreeAgentConfig"/>
+    <preference for="Byte8\FreeAgentAccounting\Api\SetupPairInterface"
+                type="Byte8\FreeAgentAccounting\Model\Setup\Pair"/>
+</config>

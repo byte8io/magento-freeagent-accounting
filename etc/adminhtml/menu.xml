@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Byte8 Ltd. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Byte8_FreeAgentAccounting::sync"
+             title="FreeAgent Sync"
+             translate="title"
+             module="Byte8_FreeAgentAccounting"
+             sortOrder="30"
+             parent="Byte8_Core::byte8"
+             action="byte8freeagentaccounting/sync/index"
+             resource="Byte8_FreeAgentAccounting::sync"/>
+        <add id="Byte8_FreeAgentAccounting::config_freeagent_accounting"
+             title="FreeAgent"
+             translate="title"
+             module="Byte8_FreeAgentAccounting"
+             sortOrder="30"
+             parent="Byte8_Core::config"
+             action="adminhtml/system_config/edit/section/byte8_freeagent_accounting/"
+             resource="Byte8_FreeAgentAccounting::config"/>
+    </menu>
+</config>
